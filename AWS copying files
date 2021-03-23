@@ -1,0 +1,7 @@
+#! /bin/bash
+
+start=$(ls natalia* | wc -l)
+
+for ((i = $start + 1 ; i < $start + 26 ; i++)); do
+  touch natalia$i
+done
